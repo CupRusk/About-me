@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@300;500;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: #1e1e2f;
@@ -26,7 +24,6 @@ body {
     padding: 20px;
     flex-grow: 1;
 }
-
 header {
     background: #2e2e3e;
     color: #fff;
@@ -72,72 +69,6 @@ header nav ul li a:hover {
     color: #4fd1c5;
     font-size: 25px;
 }
-
-main {
-    margin-top: 100px;
-    background: #343450;
-    border-radius: 15px 15px 0 0;
-    padding: 20px;
-    height: 100%;
-    flex-grow: 1;  
-}
-
-main h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    background-color: #2e2e41;
-    padding: 5px;
-    box-shadow: #000000 0px 0px 10px;
-    border: solid 3px #2c2c3b;
-    transition: all 0.3s ease;
-}
-
-main h2:hover {
-    background-color: #82b3ae;
-    color: #1e1e2f;
-}
-
-main h3 {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #5f5f93;
-    border: #4fd1c5 2px solid;
-    transition: background-color 0.3s ease;
-}
-
-main h3:hover {
-    background: #096a60;
-}
-
-main .Github h3, a {
-    color: red;
-    padding: 2px;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-main .Github h3:hover, a:hover {
-    background-color: #343450;
-    color: #fff;
-}
-
-footer {
-    background-color: #2e2e3e;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-    border-radius: 0 0 15px 15px;
-    box-shadow: #000000 0px 0px 10px;
-    font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
-}
-
 .light-theme {
     background-color: #918f8f;
 }
@@ -159,7 +90,64 @@ footer p {
     transform: scale(1.2);
     color: #4fd1c5;
 }
+main {
+    margin-top: 100px;
+    background: #343450;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    height: 80%;
+    flex-grow: 1;  
+}
+main {
+    margin-top: 100px;
+    background: #343450;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    height: 100%;
+    flex-grow: 1;  
+}
 
+main h1 {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2e2e3e;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.7s ease;
+    box-shadow: #000000 0px 0px 10px;
+}
+main h1:hover {
+    color: #000000;
+}
+main section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2e2e3e;
+    transition: all 0.7s ease;
+    box-shadow: #000000 0px 0px 10px;
+}
+main section ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    background-color: #2e2e3e;
+    transition: all 0.7s ease
+}
+footer {
+    background-color: #2e2e3e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    border-radius: 0 0 15px 15px;
+    box-shadow: #000000 0px 0px 10px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+.light-theme {
+    background-color: #918f8f;
+}
 /* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
     .container {
@@ -174,19 +162,18 @@ footer p {
     header nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     header nav ul li {
         margin-bottom: 10px;
     }
 
-    main h2 {
+    main h1 {
         font-size: 1.5rem;
     }
 
-    main h3 {
-        font-size: 1.4rem;
+    main section {
+        padding: 15px;
     }
 
     footer p {
@@ -198,7 +185,7 @@ footer p {
     }
 }
 
-/* Адаптивные стили для маленьких экранов */
+
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.3rem;
@@ -216,12 +203,12 @@ footer p {
         font-size: 16px;
     }
 
-    main h2 {
+    main h1 {
         font-size: 1.4rem;
     }
 
-    main h3 {
-        font-size: 1.3rem;
+    main section {
+        padding: 10px;
     }
 
     footer p {
